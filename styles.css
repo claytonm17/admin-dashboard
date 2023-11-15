@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    /* border: solid red 1px; */
+    border: solid red 1px;
     font-family: "Roboto", serif;
 }
 
@@ -15,6 +15,11 @@
 
 body {
     background-color: var(--shadow-color);
+}
+
+.bars {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
 }
 
 .heading {
@@ -97,3 +102,23 @@ img.notification {
 .hello > h2 {
     min-width:max-content;
 }
+
+.dashboard-icon {
+    height: 3rem;
+    width: auto;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(48deg) brightness(98%) contrast(116%);}
+
+.dashboard {
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+}
+
+.sidebar {
+    display: grid;    
+    background-color: var(--background-color);
+    color: var(--light-text-color);
+    padding: 1rem;
+    max-width: max-content;
+}
+
