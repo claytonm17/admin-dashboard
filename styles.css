@@ -1,16 +1,28 @@
 * {
     margin: 0px;
     padding: 0px;
-    border: solid red 1px;
+    /* border: solid red 1px; */
     font-family: "Roboto", serif;
 }
 
 :root {
-    
+    --text-color: #000000;
+    --background-color: #14213D;
+    --accent-color: #FCA311;
+    --shadow-color: #e5e5e5;
+    --light-text-color: #FFFFFF;
+}
+
+body {
+    background-color: var(--shadow-color);
 }
 
 .heading {
     width: 100%;
+    background-color: var(--light-text-color);
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    margin-right: 2rem;
 }
 
 .utility {
@@ -35,10 +47,9 @@ img.notification {
 }
 
 .search-text {
-    background-color: gray;
+    background-color: var(--shadow-color);
     border-radius: 10px;
-    width: 100%;
-    max-width: 300px;
+    flex-grow: 0.7;
 }
 
 .profile {
@@ -50,6 +61,7 @@ img.notification {
     height: 40px;
     width: 40px;
     border-radius: 20px;
+    margin: 0px 1rem 0px 1rem;
 }
 
 .name {
@@ -63,8 +75,8 @@ img.notification {
 }
 
 .buttons > button {
-    background-color: blue;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--light-text-color);
     font-weight: 700;
     border-radius: 10px;
     padding: 5px 10px 5px 10px;
@@ -82,3 +94,6 @@ img.notification {
     grid-template-columns: repeat(2, auto);
 }
 
+.hello > h2 {
+    min-width:max-content;
+}
