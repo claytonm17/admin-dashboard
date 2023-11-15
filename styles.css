@@ -5,6 +5,10 @@
     font-family: "Roboto", serif;
 }
 
+:root {
+    
+}
+
 .heading {
     width: 100%;
 }
@@ -52,6 +56,12 @@ img.notification {
     width: 150px;
 }
 
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+}
+
 .buttons > button {
     background-color: blue;
     color: white;
@@ -59,3 +69,16 @@ img.notification {
     border-radius: 10px;
     padding: 5px 10px 5px 10px;
 }
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem;
+    align-items: center;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
