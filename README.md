@@ -1,1 +1,1 @@
-# admin-dashboard
+Admin Dashboard created using the CSS Grid layout. 
