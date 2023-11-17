@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    border: solid red 1px;
+    /* border: solid red 1px; */
     font-family: "Roboto", serif;
 }
 
@@ -17,17 +17,11 @@ body {
     background-color: var(--shadow-color);
 }
 
-.bars {
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-}
-
 .heading {
-    width: 100%;
     background-color: var(--light-text-color);
-    padding-bottom: 1rem;
-    padding-top: 0.5rem;
-    margin-right: 2rem;
+    padding: 1rem;
+    min-width:max-content;
+    display: grid;
 }
 
 .utility {
@@ -119,6 +113,20 @@ img.notification {
     background-color: var(--background-color);
     color: var(--light-text-color);
     padding: 1rem;
-    max-width: max-content;
+    grid-row: span 2;
+    max-width: 200px;
 }
 
+.bars {
+    display: grid;
+    grid-template-columns: auto 4fr;
+    grid-template-rows: 1fr 4fr;
+    justify-content: start;
+    width: 100%;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
